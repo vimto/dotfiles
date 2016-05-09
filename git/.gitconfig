@@ -1,0 +1,16 @@
+[user]
+	name = Vimal Jobanputra
+	email = vim@atomic.io
+
+[github]
+	user = vimto
+
+[core]
+	excludesfile = ~/.gitignore
+	editor = atom --wait
+
+[credential]
+	helper = osxkeychain
+
+[push]
+	default = simple

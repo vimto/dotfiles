@@ -1,0 +1,5 @@
+# Make tab autocomplete case insensitive
+set completion-ignore-case on
+
+# List all matches
+set show-all-if-ambiguous on

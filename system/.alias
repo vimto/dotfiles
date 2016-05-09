@@ -1,0 +1,10 @@
+# Bash
+alias lsl="ls -lahG"
+alias dotiles="atom ~/.bash_login"
+alias fdns="dscacheutil -flushcache"
+
+# Git
+alias gst="git status -sb"
+alias gl="git log --oneline --decorate"
+alias gco="git checkout"
+alias gb="git branch"
