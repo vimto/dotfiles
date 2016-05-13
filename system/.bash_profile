@@ -9,12 +9,17 @@ for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,prompt}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
-# Setup rbenv
+# bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Setup nvm
+# nvm
 export NVM_DIR="/Users/vim/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# setup Pyenv
+# pyenv
 eval "$(pyenv init -)"
