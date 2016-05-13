@@ -8,9 +8,50 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = atom --wait
+	# Make `git rebase` safer on OSX: http://www.git-tower.com/blog/make-git-rebase-safe-on-osx
+	trustctime = false
 
 [credential]
 	helper = osxkeychain
 
 [push]
 	default = simple
+
+[fetch]
+  prune = true
+
+[apply]
+	whitespace = fix
+
+[alias]
+	co = checkout
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	s = status -s
+	br = branch -a
+	amend = commit --amend --reuse-message=HEAD
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+
+[help]
+	autocorrect = 1
+
+[diff]
+	renames = copies
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	trustexitcode = true
+
+[merge]
+	tool = Kaleidoscope
+[mergetool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
