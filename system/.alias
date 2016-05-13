@@ -1,7 +1,10 @@
 # Bash
 alias lsl="ls -lahG"
-alias dotiles="atom ~/.bash_login"
+alias dotiles="atom ~/code/personal/dotfiles"
 alias fdns="dscacheutil -flushcache"
+
+# Directories
+alias cdr="cd ~/code/atomic/reactor"
 
 # Git
 alias gst="git status -sb"
