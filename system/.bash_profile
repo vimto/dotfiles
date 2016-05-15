@@ -5,9 +5,12 @@ SCRIPT_PATH=$($READLINK -n "$CURRENT_SCRIPT")
 DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
 
 # Run customisation files in system directory
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,path,env,alias,prompt}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{functions,path,env,alias,prompt}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
+
+# Raise limit for open files and processes
+ulimit -S -n 8192
 
 # bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

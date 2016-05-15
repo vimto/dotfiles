@@ -1,13 +1,32 @@
-# Bash
-alias lsl="ls -lahG"
-alias dotiles="atom ~/code/personal/dotfiles"
-alias fdns="dscacheutil -flushcache"
+# Easier navigation
+alias ..="cd .."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
 
-# Directories
-alias cdr="cd ~/code/atomic/reactor"
+# Files, directories
+alias lsl="ls -lahG"
+alias rr="rm -rf"
+alias cpwd='pwd|tr -d "\n"|pbcopy'
 
 # Git
+alias g="git"
 alias gst="git status -sb"
 alias gl="git log --oneline --decorate"
 alias gco="git checkout"
 alias gb="git branch"
+
+# Network
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ipl="ipconfig getifaddr en0"
+alias fdns="dscacheutil -flushcache"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Shortcuts
+alias dotiles="atom ~/code/personal/dotfiles"
+alias r="cd ~/code/atomic/reactor"
