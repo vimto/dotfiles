@@ -4,7 +4,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Files, directories
-alias lsl="ls -lahG"
+alias lsl="ls -lhGF"
 alias rr="rm -rf"
 alias cpwd='pwd|tr -d "\n"|pbcopy'
 
@@ -28,5 +28,5 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Shortcuts
-alias dotiles="atom ~/code/personal/dotfiles"
+alias dotfiles="atom ~/code/personal/dotfiles"
 alias r="cd ~/code/atomic/reactor"
