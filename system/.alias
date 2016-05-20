@@ -29,4 +29,5 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 
 # Shortcuts
 alias dotfiles="atom ~/code/personal/dotfiles"
+alias p="cd ~/code/personal"
 alias r="cd ~/code/atomic/reactor"
