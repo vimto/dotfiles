@@ -34,3 +34,5 @@ alias as="cd ~/code/action-station/speakout"
 alias 38="cd ~/code/38d/speakout"
 alias dia="cd ~/code/dia/poc"
 
+# ruby
+alias be="bundle exec"
