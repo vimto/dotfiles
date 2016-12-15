@@ -17,8 +17,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# chruby
+source '/usr/local/share/chruby/chruby.sh'
+source '/usr/local/share/chruby/auto.sh'
 
 # nvm
 export NVM_DIR="/Users/vim/.nvm"
