@@ -16,6 +16,9 @@ ulimit -S -n 8192
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
+# Add a completion for our gco alias
+# TODO - should this be in .alias?
+__git_complete gco _git_checkout
 
 # chruby
 source '/usr/local/share/chruby/chruby.sh'
