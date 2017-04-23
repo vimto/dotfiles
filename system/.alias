@@ -28,9 +28,9 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Project shortcuts
-alias dotfiles="atom ~/code/personal/dotfiles"
+alias dotfiles="code ~/code/personal/dotfiles"
 alias p="atom ~/code/personal"
-alias as="cd ~/code/action-station/speakout"
+alias as="cd ~/code/action-station/actionstation.org.nz"
 alias i="cd ~/code/tt/inquisitive-app"
 
 # ruby
