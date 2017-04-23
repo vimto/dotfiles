@@ -28,6 +28,5 @@ source '/usr/local/share/chruby/auto.sh'
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
-
 # pyenv
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
