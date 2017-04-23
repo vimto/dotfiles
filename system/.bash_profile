@@ -13,18 +13,19 @@ done
 ulimit -S -n 8192
 
 # bash completion
+# Depends on brew install git bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
-# Add a completion for our gco alias
-# TODO - should this be in .alias?
 __git_complete gco _git_checkout
 
 # chruby
+# Depends on brew install chruby
 source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
 
 # nvm
+# Depends on brew install nvm
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
