@@ -23,7 +23,7 @@ __git_complete gco _git_checkout
 # Depends on brew install chruby
 source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
-chruby ruby-2.3.4
+chruby ruby-2.3.1
 
 # nvm
 # Depends on brew install nvm
