@@ -22,17 +22,13 @@ function fs() {
 	fi;
 }
 
-manpdf() {
-  man -t "$1" | open -f -a /Applications/Preview.app/
-}
-
 # `a` with no arguments opens the current directory in Atom Editor, otherwise
 # opens the given location
-function a() {
+function c() {
 	if [ $# -eq 0 ]; then
-		atom .;
+		code .;
 	else
-		atom "$@";
+		code "$@";
 	fi;
 }
 
@@ -48,6 +44,6 @@ function o() {
 
 # Weather
 weather() {
-  local CITY=${1:-Utrecht}
+  local CITY=${1:-Lower Hutt}
   curl -4 "wttr.in/$CITY"
 }

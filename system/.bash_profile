@@ -5,7 +5,7 @@ SCRIPT_PATH=$($READLINK -n "$CURRENT_SCRIPT")
 DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
 
 # Run customisation files in system directory
-for DOTFILE in "$DOTFILES_DIR"/system/.{functions,path,env,alias,prompt}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{functions,env,alias,prompt}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -23,7 +23,7 @@ __git_complete gco _git_checkout
 # Depends on brew install chruby
 source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
-chruby ruby-2.3.4
+chruby ruby-2.6.2
 
 # nvm
 # Depends on brew install nvm

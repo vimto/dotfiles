@@ -10,6 +10,10 @@ ln -sfv "$DOTFILES_DIR/system/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 
+ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
+
+ln -sfv "$DOTFILES_DIR/gem/.gemrc" ~
+
 # Run OSX Customisation scripts
 for DEFAULTS_FILE in "$DOTFILES_DIR"/osx/*.sh; do
   echo "Applying $DEFAULTS_FILE" && . "$DEFAULTS_FILE"

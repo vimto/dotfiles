@@ -29,9 +29,15 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 
 # Project shortcuts
 alias dotfiles="cd ~/code/personal/dotfiles"
-alias as="cd ~/code/action-station/actionstation.org.nz"
+alias no="cd ~/code/personal/noodles"
+alias as="cd ~/code/action-station/action-station"
+alias ah="cd ~/code/action-station/action-hub"
 alias pp="cd ~/code/pp/press-patron-rails"
 alias idi="cd ~/code/open/identity"
+alias jo="cd ~/code/open/journey && chruby 2.6.2"
+alias ra="cd ~/code/open/rally"
 
 # ruby
 alias be="bundle exec"
+alias r="./bin/rails"
+alias ra="./bin/rake"

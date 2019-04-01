@@ -3,3 +3,8 @@
 
 # Notes symlinked into git repos
 _notes
+.notes
+
+rubocop_cache
+
+.idea
