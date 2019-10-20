@@ -30,5 +30,7 @@ chruby ruby-2.6.2
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
-# pyenv
-# eval "$(pyenv init -)"
+# Python virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/code/open
+source /usr/local/bin/virtualenvwrapper.sh
