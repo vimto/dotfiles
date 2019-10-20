@@ -38,7 +38,13 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 ###############################################################################
 
 # Speed up keyboard repeat rate.
-defaults write NSGlobalDomain KeyRepeat -int 1
+# normal minimum is 15 (225 ms)
+defaults write -g InitialKeyRepeat -float 10.0
+defaults write NSGlobalDomain InitialKeyRepeat -float 10.0
+
+# normal minimum is 2 (30 ms)
+defaults write NSGlobalDomain KeyRepeat -float 1.0
+defaults write -g KeyRepeat -float 1.0
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
