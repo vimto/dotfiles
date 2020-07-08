@@ -23,7 +23,7 @@ __git_complete gco _git_checkout
 # Depends on brew install chruby
 source '/usr/local/share/chruby/chruby.sh'
 source '/usr/local/share/chruby/auto.sh'
-chruby ruby-2.6.2
+chruby ruby-2.6.3
 
 # nvm
 # Depends on brew install nvm
@@ -31,9 +31,10 @@ export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
 # Python virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/code/open
-source /usr/local/bin/virtualenvwrapper.sh
+# Depends on brew install python && pip install virtualenv virtualenvwrapper
+# export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/code
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/vim/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
